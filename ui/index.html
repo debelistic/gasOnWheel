@@ -10,10 +10,17 @@
 <body>
   <header id="head">
     <h3 class="logo">gas on wheel</h3>
+    <div class="nav_icon" id="hambuger_menu">
+      <div class="nav_bar1"></div>
+      <div class="nav_bar2"></div>
+      <div class="nav_bar3"></div>
+    </div>
     <nav class="main_nav">
       <ul>
-        <li><a href="#main_section">home<a></li>
-        <li><a href="#main_section">about</a></li>
+        <li><a href="#main_section">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#service">services</a></li>
+        <li><a href="#contact">contact</a></li>
         <li><a href="blog.html">blog</a></li>
       </ul>
     </nav>
@@ -22,15 +29,45 @@
     <div class="main_content">
       <h1>gas on wheel</h1>
       <p>the future of energy</p>
-      <a href="#about" class="mian_link">learn more</a>
-      <a href="#about" class="mian_link">signup</a>
+      <span class="main_content_link">
+        <a href="#about" class="main_link">learn more</a>
+        <a href="#about" class="mainn_link">signup</a>
+      </span>
     </div>
+    <div class="register_signin_wrapper">
+      <div class="register_signin">
+        <div class="register">
+          <form action="#" method="post">
+            <input type="text" name="first_name" id="first_name">
+            <input type="text" name="last_name" id="last_name">
+            <input type="email" name="email" id="email">
+            <input type="password" name="password" id="password">
+            <input type="submit" value="SignUp">
+          </form>
+        </div>
+        <div class="sigin">
+          <form action="#" method="post">
+            <input type="email" name="email" id="email">
+            <input type="password" name="password" id="password">
+            <input type="submit" value="Signin">
+          </form>
+        </div>
+      </div>
+    </div>
+    
   </section>
   <section id="about">
     <div class="about_content">
       <h1>About Gas On wheel</h1>
     </div>
   </section>
+  <section id="service"></section>
+
+  <footer id="footer">
+    <p>copyright &copy; gas on wheel 2018</p>
+  </footer>
+
+
   <script src="js/index.js"></script>
 </body>
 </html>
