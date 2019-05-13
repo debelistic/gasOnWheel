@@ -9,6 +9,7 @@ body{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+
 #head{
   height: 90px;
   width: 100%;
@@ -245,6 +246,26 @@ span.signup{
   border-radius: 7px;
 }
 
+#about{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  justify-content: center;
+}
+
+.about_content1{
+  background: yellowgreen;
+}
+.about_content2{
+  background: #e4dede;
+}
+.about_content3{
+  background: #e4dede;
+}
+.about_content4{
+  background: red;
+}
+
+
 @media only screen and (max-width: 920px){
   #main_section{
     display: grid;
@@ -262,9 +283,9 @@ span.signup{
   .register_signin{
     margin: 15% 10%;
   }
-.form_input input{
-  font-size: 16px;
-}
+  .form_input input{
+    font-size: 16px;
+  }
   .form_input input:focus + .label_name .content_name,
   .form_input input:valid + .label_name .content_name{
     font-size: 14px;
@@ -272,6 +293,11 @@ span.signup{
   input[type=submit]{
     font-size: 14px;
     width: 70px;
+  }
+  #about{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: center;
   }
 }
 
@@ -341,5 +367,10 @@ span.signup{
   #main_section{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  #about{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-content: center;
   }
 }

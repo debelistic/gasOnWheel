@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
+  <!-- scroll library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- end of scroll library -->
   <title>Gas On Wheel</title>
 </head>
 <body>
@@ -89,17 +92,44 @@
     
   </section>
   <section id="about">
-    <div class="about_content">
+    <div data-aos="fade-up" data-aos-delay="50" data-aos-easing="ease-in-out" class="about_content1">
+      <h1>About Gas On wheel</h1>
+    </div>
+    <div data-aos="fade-right" data-aos-delay="50" data-aos-easing="ease-in-out" class="about_content2">
+      <h1>About Gas On wheel</h1>
+    </div>
+    <div data-aos="fade-left" data-aos-delay="50" data-aos-easing="ease-in-out" class="about_content3">
+      <h1>About Gas On wheel</h1>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="50" data-aos-easing="ease-in-out" class="about_content4">
       <h1>About Gas On wheel</h1>
     </div>
   </section>
-  <section id="service"></section>
+  <section id="service">
+
+  </section>
+  <section id="contact">
+    <div>
+      <h3 class="title">Contact VAdev</h3>
+      <div>
+        <form id="form" method="post" action="send/contact">
+          <input type="text" placeholder="Name"><br>
+          <input type="email" placeholder="Emial Address"><br>
+          <textarea placeholder="Message"></textarea><br>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+  </section>
+  <a href="#home" class="backtotop"> back to top</a>
 
   <footer id="footer">
     <p>copyright &copy; gas on wheel 2018</p>
   </footer>
 
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="js/index.js"></script>
 </body>
 </html>
