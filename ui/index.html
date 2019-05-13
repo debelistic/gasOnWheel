@@ -17,7 +17,7 @@
     </div>
     <nav class="main_nav">
       <ul>
-        <li><a href="#main_section">home</a></li>
+        <li class="active"><a href="#main_section">home</a></li>
         <li><a href="#about">about</a></li>
         <li><a href="#service">services</a></li>
         <li><a href="#contact">contact</a></li>
@@ -31,25 +31,57 @@
       <p>the future of energy</p>
       <span class="main_content_link">
         <a href="#about" class="main_link">learn more</a>
-        <a href="#about" class="mainn_link">signup</a>
+        <a href="#" class="main_link signup">signup</a>
       </span>
     </div>
     <div class="register_signin_wrapper">
       <div class="register_signin">
-        <div class="register">
-          <form action="#" method="post">
-            <input type="text" name="first_name" id="first_name">
-            <input type="text" name="last_name" id="last_name">
-            <input type="email" name="email" id="email">
-            <input type="password" name="password" id="password">
+        <div class="register_form">
+          <form action="#" method="post" class="forms">
+            <div class="form_input">
+              <input type="text" name="first_name" id="first_name" required />
+              <label for="first_name" class="label_name">
+                <span class="content_name">first Name</span>
+              </label>
+            </div>
+            <div class="form_input">
+              <input type="text" name="last_name" id="last_name" required />
+              <label for="last_name" class="label_name">
+                <span class="content_name">last Name</span>
+              </label>
+            </div>
+            <div class="form_input">
+              <input type="email" name="email" id="reg_email" autocomplete="off" required />
+              <label for="email" class="label_name">
+                <span class="content_name">email</span>
+              </label>
+            </div>
+            <div class="form_input">
+              <input type="password" name="password" id="reg_password" autocomplete="off" required />
+              <label for="password" class="label_name">
+                <span class="content_name">password</span>
+              </label>
+            </div>
             <input type="submit" value="SignUp">
+            <p>have an account <span class="signup login_form">signin</span></p>
           </form>
         </div>
-        <div class="sigin">
-          <form action="#" method="post">
-            <input type="email" name="email" id="email">
-            <input type="password" name="password" id="password">
+        <div class="signin_form">
+          <form action="#" method="post" class="forms">
+            <div class="form_input">
+              <input type="email" name="email" id="email" required />
+              <label for="email" class="label_name">
+                <span class="content_name">Email</span>
+              </label>
+            </div>
+            <div class="form_input">
+              <input type="password" name="password" id="password" required />
+              <label for="password" class="label_name">
+                <span class="content_name">Password</span>
+              </label>
+            </div>
             <input type="submit" value="Signin">
+            <p>don't have an account <span class="signup">signup</span></p>
           </form>
         </div>
       </div>

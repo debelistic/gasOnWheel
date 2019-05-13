@@ -21,7 +21,8 @@ body{
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  z-index: 1;
 }
 
 .main_nav{
@@ -48,9 +49,19 @@ body{
   cursor: pointer;
 }
 
-.main_nav > ul li:hover, #head h3:hover{
+.active, .main_nav > ul li:hover{
   background: #ffffff;
-  color: #13a19a
+  color: #13a19a !important;
+}
+
+#head h3{
+  cursor: pointer;
+}
+
+#head h3:hover{
+  background: #ffffff;
+  color: #13a19a;
+  padding: 9px;
 }
 
 .main_nav > ul li a{
@@ -73,7 +84,6 @@ section{
   background-size: 100%;
   display: grid;
   grid-template-columns: 65% 35%;
-  flex-wrap: wrap;
 }
 
 .main_content{
@@ -101,7 +111,7 @@ section{
   margin-top: 15px;
 }
 
-.main_content a{
+.main_link{
   color: #ffffff;
   font-size: 16px;
   margin: 5px;
@@ -121,9 +131,149 @@ section{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 35% auto 0 10%;  
+  margin: 35% 8%;
+  transition: transform all 0.4s ease;
 }
 
+.register_form{
+  display: none;
+  height: 0;
+  transition: 0.3sa;
+}
+
+.open_form{
+  display: block;
+  height: 100%;
+  transition: transform all 0.4s ease;
+}
+
+.close_form{
+  display: none;
+  height: 0;
+}
+
+label{
+  color: #6dd5fa;
+}
+.form_input{
+  position: relative;
+  height: 50px;
+  margin-top: 9px;
+  overflow: hidden;
+  color: #6dd5fa;
+}
+
+.form_input input{
+  width: 100%;
+  height: 100%;
+  color: #6dd5fa;
+  font-size: 20px;
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+
+
+.form_input label{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #6dd5fa;
+  height: 100%;
+  padding: 5px;
+  pointer-events: none;
+  border-bottom: 1px solid #13a19a;
+}
+
+.form_input label::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  color: #6dd5fa;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #6dd5fa;
+  transform: translateX(-100%);
+  transition: transform all 0.3s ease;
+}
+
+.content_name{
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.form_input input:focus + .label_name .content_name,
+.form_input input:valid + .label_name .content_name{
+  transform: translateY(-150%);
+  font-size: 16px;
+  color: #6dd5fa;
+}
+
+.form_input input:focus + .label_name::after,
+.form_input input:valid + .label_name::after{
+  transform: translateY(0);
+  color: #6dd5fa;
+}
+
+input[type=submit]{
+  color: #ffffff;
+  background: #6dd5fa;
+  font-size: 16px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 10px;
+  width: 80px;
+  padding: 5px;
+  outline: none;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+span.signup{
+  color: #ffffff;
+  background: #6dd5fa;
+  font-size: 16px;
+  margin: 5px;
+  padding: 5px;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  border-radius: 7px;
+}
+
+@media only screen and (max-width: 920px){
+  #main_section{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+  .main_content{
+    margin-top: 0;
+    margin: 0;
+    align-items: center;
+  }
+  .main_content h1{
+    font-size: 35px;
+    letter-spacing: 5px;
+  }
+  .register_signin{
+    margin: 15% 10%;
+  }
+.form_input input{
+  font-size: 16px;
+}
+  .form_input input:focus + .label_name .content_name,
+  .form_input input:valid + .label_name .content_name{
+    font-size: 14px;
+  }
+  input[type=submit]{
+    font-size: 14px;
+    width: 70px;
+  }
+}
 
 @media only screen and (max-width: 520px){
   #head{
