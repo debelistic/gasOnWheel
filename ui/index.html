@@ -66,7 +66,9 @@
               </label>
             </div>
             <input type="submit" value="SignUp">
-            <p>have an account <span class="signup login_form">signin</span></p>
+            <div class="form_p">
+              <p>have an account <span class="signup login_form">signin</span></p>
+            </div>
           </form>
         </div>
         <div class="signin_form">
@@ -84,39 +86,51 @@
               </label>
             </div>
             <input type="submit" value="Signin">
-            <p>don't have an account <span class="signup">signup</span></p>
+            <div class="form_p">
+              <p >don't have an account <span class="signup">signup</span></p>
+            </div>
           </form>
         </div>
       </div>
     </div>
     
   </section>
-  <section id="about">
-    <div data-aos="fade-up" data-aos-delay="50" data-aos-easing="ease-in-out" class="about_content1">
+  <section id="service">
+    <div data-aos="zoom-in" data-aos-delay="40" data-aos-easing="linear" class="service_content1">
       <h1>About Gas On wheel</h1>
     </div>
-    <div data-aos="fade-right" data-aos-delay="50" data-aos-easing="ease-in-out" class="about_content2">
+    <div data-aos="zoom-in-down" data-aos-delay="50" data-aos-easing="ease-in-out" class="service_content2">
       <h1>About Gas On wheel</h1>
     </div>
-    <div data-aos="fade-left" data-aos-delay="50" data-aos-easing="ease-in-out" class="about_content3">
+    <div data-aos="fade-left" data-aos-delay="60" data-aos-easing="ease-in-out" class="service_content3">
       <h1>About Gas On wheel</h1>
     </div>
-    <div data-aos="fade-up" data-aos-delay="50" data-aos-easing="ease-in-out" class="about_content4">
+    <div data-aos="fade-up" data-aos-delay="70" data-aos-easing="ease-in-out" class="service_content4">
       <h1>About Gas On wheel</h1>
     </div>
   </section>
-  <section id="service">
-
+  <section id="about">
+    <div id="about_gow">
+      <p class="gow">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam quam nihil tempore ea velit qui quasi dolore rerum dicta itaque, voluptatem excepturi. Suscipit illum, eligendi praesentium laudantium incidunt similique amet.
+      </p>
+    </div>
+    <div id="pic_name">
+      <img src="#" alt="profile pic" class="owner_img">
+      <p class="owner_name"></p>
+    </div>
   </section>
   <section id="contact">
-    <div>
       <h3 class="title">Contact VAdev</h3>
-      <div>
-        <form id="form" method="post" action="send/contact">
-          <input type="text" placeholder="Name"><br>
-          <input type="email" placeholder="Emial Address"><br>
-          <textarea placeholder="Message"></textarea><br>
-          <button type="submit">Send</button>
+      <div id="conatct_form">
+        <form method="post" action="send/contact">
+          <label for="name">Full Name:</label><br>
+          <input type="text"/><br>
+          <label for="name">Email Address:</label><br>
+          <input type="email"/><br>
+          <label for="name">Message:</label><br>
+          <textarea type="textarea" ></textarea><br>
+          <input type="submit" value="submit" disabled />
         </form>
       </div>
   </section>

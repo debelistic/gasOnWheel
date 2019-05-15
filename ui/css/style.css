@@ -12,11 +12,12 @@ body{
 
 #head{
   height: 90px;
-  width: 100%;
-  position: sticky;
+  width: 100vw;
+  position: fixed;
   top: 0;
   color: #ffffff;
-  background: #13a19a;
+  background: rgba(0,204,255,1);
+  background-image: linear-gradient( -123deg,  rgba(0,204,255,1) -5.1%, rgba(0,221,61,1)100.7% );
   padding: 10px;
   display: flex;
   flex-direction: row;
@@ -78,12 +79,14 @@ section{
   margin: 0;
   padding:0;
   box-sizing: border-box;
+  background-image: linear-gradient( 112.2deg,  rgba(0,204,255,1) -1.1%, rgba(0,221,61,1) 100.7% );
 }
 
 #main_section{
-  background: #6dd5fa;
+  background-image: linear-gradient( -123deg,  rgba(0,204,255,1) -5.1%, rgba(0,221,61,1) 70.7% );
   background-size: 100%;
   display: grid;
+  height: calc(100vh - 90px);
   grid-template-columns: 65% 35%;
 }
 
@@ -91,8 +94,7 @@ section{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: auto auto;
-  margin-top: 20%;
+  align-items: center;
   color: #ffffff;
 }
 
@@ -123,29 +125,39 @@ section{
 }
 
 .register_signin_wrapper{
-  background: #ffffff;
+  background-image: linear-gradient( 112.2deg,  rgba(0,204,255,1) -1.1%, rgba(0,221,61,1) 100.7% );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
 }
 
 .register_signin{
   background: #ffffff;
+  background-image: linear-gradient( 112.2deg,  rgba(0,204,255,1) -1.1%, rgba(0,221,61,1) 100.7% );
   color: #13a19a;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 35% 8%;
-  transition: transform all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .register_form{
   display: none;
+  background: rgba(14, 40, 46, 0.76);
+  padding: 1rem;
   height: 0;
-  transition: 0.3sa;
+  border-radius: 9.5px;
+  transition: all 0.5s linear;
+}
+
+.signin_form{
+  transition: all 0.5s linear;
+  background: rgba(14, 40, 46, 0.76);
+  padding: 1rem;
+  border-radius: 9.5px;
 }
 
 .open_form{
   display: block;
   height: 100%;
-  transition: transform all 0.4s ease;
 }
 
 .close_form{
@@ -156,24 +168,33 @@ section{
 label{
   color: #6dd5fa;
 }
+
 .form_input{
   position: relative;
   height: 50px;
-  margin-top: 9px;
   overflow: hidden;
   color: #6dd5fa;
+  
 }
 
 .form_input input{
   width: 100%;
   height: 100%;
   color: #6dd5fa;
+  background: rgba(14, 40, 46, 0.76);
   font-size: 20px;
   padding: 5px;
   border: none;
   outline: none;
 }
 
+div.form_p{
+  margin: 0.4rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  color: #6dd5fa;
+}
 
 .form_input label{
   position: absolute;
@@ -182,9 +203,10 @@ label{
   width: 100%;
   color: #6dd5fa;
   height: 100%;
+  background: rgba(14, 40, 46, 0.76);
   padding: 5px;
   pointer-events: none;
-  border-bottom: 1px solid #13a19a;
+  border-bottom: 1px solid #6dd5fa;
 }
 
 .form_input label::after{
@@ -205,6 +227,7 @@ label{
   bottom: 5px;
   left: 0px;
   transition: all 0.3s ease;
+  padding-left: 5px;
 }
 
 .form_input input:focus + .label_name .content_name,
@@ -221,8 +244,8 @@ label{
 }
 
 input[type=submit]{
-  color: #ffffff;
-  background: #6dd5fa;
+  color: #6dd5fa;
+  background: rgba(14, 40, 46, 0.76);
   font-size: 16px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin-top: 10px;
@@ -230,39 +253,159 @@ input[type=submit]{
   padding: 5px;
   outline: none;
   text-decoration: none;
-  border: 1px solid #ffffff;
+  border: 1px solid #6dd5fa;
   border-radius: 5px;
   cursor: pointer;
 }
 
 span.signup{
-  color: #ffffff;
-  background: #6dd5fa;
+  background: rgba(14, 40, 46, 0.76);
+  color: #6dd5fa;;
   font-size: 16px;
   margin: 5px;
   padding: 5px;
   text-decoration: none;
   border: 1px solid #ffffff;
   border-radius: 7px;
+  cursor: pointer;
+}
+
+#service{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  justify-content: center;
+  background: #ffffff;
+}
+
+.service_content1{
+  background: #e4dede;
+  color: #13a19a;
+  background-image: url(../imgs/lpg_bac1.jpg);
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+  background-position: center;
+}
+.service_content2{
+  color: #13a19a;
+  background: #d4cbcb;
+  background-image: linear-gradient( -112.2deg,  rgba(0,204,255,1) -1.1%, rgba(0,221,61,1) 100.7% );
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.service_content3{
+  color: #13a19a;
+  background: #d4cbcb;
+  background-image: linear-gradient( 112.2deg,  rgba(0,204,255,1) -1.1%, rgba(0,221,61,1) 100.7% );
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.service_content4{
+  color: #13a19a;
+  background: #dce3e4b6;
+  background-image: url(../imgs/lpg_bac.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: border-box;
+  background-position: center;
 }
 
 #about{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  justify-content: center;
+  grid-template-columns: 60% 40%;
+  background-image: linear-gradient( -112.2deg,  rgba(0,204,255,1) -1.1%, rgba(0,221,61,1) 100.7% );
 }
 
-.about_content1{
-  background: yellowgreen;
+#about_gow{
+  border-right:3px solid #13a19a;
+  display: flex;
+  flex-direction: column;
 }
-.about_content2{
-  background: #e4dede;
+
+#pic_name{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-.about_content3{
-  background: #e4dede;
+
+#contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.about_content4{
-  background: red;
+
+#contact h3{
+  margin: 1rem;
+  color: rgba(14, 40, 46, 0.76);
+}
+
+#conatct_form label{
+  margin-left: 0.4rem;
+  color: rgba(14, 40, 46, 0.76);
+}
+
+#conatct_form input[type=text],
+#conatct_form input[type=email],
+#conatct_form textarea{
+  background: rgba(14, 40, 46, 0.76);
+  color: #6dd5fa;
+}
+
+#conatct_form input[type=text],
+#conatct_form input[type=email],
+#conatct_form textarea,
+#conatct_form input[type=submit]{
+  width: 28rem;
+  margin: 0.4rem;
+  border-radius: 0.3rem;
+  height: 3rem;
+  padding:0.5rem;
+  border: none;
+  outline: none;
+}
+
+#conatct_form input[type=submit]{
+  width: 4rem;
+  color: #6dd5fa;
+  background: rgba(14, 40, 46, 0.76);
+}
+
+
+#conatct_form textarea{
+  height: 6rem;
+  padding-top: 0;
+  padding-block-start: 0;
+}
+
+.backtotop{
+  position: fixed;
+  bottom: 5px;
+  right:5px;
+  background: rgba(255, 255, 255, 0.363);
+  height: 40px;
+  padding: 7px;
+  border-radius: 2px;
+}
+
+.backtotop{
+  text-decoration: none;
+  color: rgba(14, 40, 46, 0.76)
+}
+#footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient( -112.2deg,  rgba(0,204,255,1) -1.1%, rgba(0,221,61,1) 100.7% );
+  height: 120px;
+  color: #ffffff;
 }
 
 
@@ -294,7 +437,7 @@ span.signup{
     font-size: 14px;
     width: 70px;
   }
-  #about{
+  #service{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     justify-content: center;
@@ -302,6 +445,7 @@ span.signup{
 }
 
 @media only screen and (max-width: 520px){
+  
   .logo{
     position: absolute;
     margin: 0;
@@ -368,9 +512,18 @@ span.signup{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
-  #about{
+  #service{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     justify-content: center;
   }
+  #conatct_form input[type=text],
+  #conatct_form input[type=email],
+  #conatct_form textarea,
+  #conatct_form input[type=submit]{
+    width: 16rem;
+  }
 }
+
+
+/* background-image: linear-gradient( 112.2deg,  rgba(0,204,255,1) -1.1%, rgba(0,221,61,1) 100.7% ); */
