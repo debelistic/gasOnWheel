@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- scroll library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- end of scroll library -->
+  <title>Gas On Wheel</title>
+</head>
+<body>
+  <header id="head">
+    <h3 class="logo">gas on wheel</h3>
+    <div class="nav_icon" id="hambuger_menu">
+      <div class="nav_bar1"></div>
+      <div class="nav_bar2"></div>
+      <div class="nav_bar3"></div>
+    </div>
+    <nav class="main_nav">
+      <ul>
+        <li class="active"><a href="#main_section">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#service">services</a></li>
+        <li><a href="#contact">contact</a></li>
+        <li><a href="blog.html">blog</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="main_section">
+    <div class="main_content">
+      <h1>gas on wheel</h1>
+      <p>the future of energy</p>
+      <span class="main_content_link">
+        <a href="#about" class="main_link">learn more</a>
+        <a href="#" class="main_link signup">signup</a>
+      </span>
+    </div>
+    <div class="register_signin_wrapper">
+      <div class="register_signin">
+        <div class="register_form">
+          <form action="#" method="post" class="forms">
+            <div class="form_input">
+              <input type="text" name="first_name" id="first_name" required />
+              <label for="first_name" class="label_name">
+                <span class="content_name">first Name</span>
+              </label>
+            </div>
+            <div class="form_input">
+              <input type="text" name="last_name" id="last_name" required />
+              <label for="last_name" class="label_name">
+                <span class="content_name">last Name</span>
+              </label>
+            </div>
+            <div class="form_input">
+              <input type="email" name="email" id="reg_email" autocomplete="off" required />
+              <label for="email" class="label_name">
+                <span class="content_name">email</span>
+              </label>
+            </div>
+            <div class="form_input">
+              <input type="password" name="password" id="reg_password" autocomplete="off" required />
+              <label for="password" class="label_name">
+                <span class="content_name">password</span>
+              </label>
+            </div>
+            <input type="submit" value="SignUp">
+            <div class="form_p">
+              <p>have an account <span class="signup login_form">signin</span></p>
+            </div>
+          </form>
+        </div>
+        <div class="signin_form">
+          <form action="#" method="post" class="forms">
+            <div class="form_input">
+              <input type="email" name="email" id="email" required />
+              <label for="email" class="label_name">
+                <span class="content_name">Email</span>
+              </label>
+            </div>
+            <div class="form_input">
+              <input type="password" name="password" id="password" required />
+              <label for="password" class="label_name">
+                <span class="content_name">Password</span>
+              </label>
+            </div>
+            <input type="submit" value="Signin">
+            <div class="form_p">
+              <p >don't have an account <span class="signup">signup</span></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  <section id="service">
+    <div data-aos="zoom-in" data-aos-delay="40" data-aos-easing="linear" class="service_content1">
+      <h1>About Gas On wheel</h1>
+    </div>
+    <div data-aos="zoom-in-down" data-aos-delay="50" data-aos-easing="ease-in-out" class="service_content2">
+      <h1>About Gas On wheel</h1>
+    </div>
+    <div data-aos="fade-left" data-aos-delay="60" data-aos-easing="ease-in-out" class="service_content3">
+      <h1>About Gas On wheel</h1>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="70" data-aos-easing="ease-in-out" class="service_content4">
+      <h1>About Gas On wheel</h1>
+    </div>
+  </section>
+  <section id="about">
+    <div id="about_gow">
+      <p class="gow">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam quam nihil tempore ea velit qui quasi dolore rerum dicta itaque, voluptatem excepturi. Suscipit illum, eligendi praesentium laudantium incidunt similique amet.
+      </p>
+    </div>
+    <div id="pic_name">
+      <img src="#" alt="profile pic" class="owner_img">
+      <p class="owner_name"></p>
+    </div>
+  </section>
+  <section id="contact">
+      <h3 class="title">Contact VAdev</h3>
+      <div id="conatct_form">
+        <form method="post" action="send/contact">
+          <label for="name">Full Name:</label><br>
+          <input type="text"/><br>
+          <label for="name">Email Address:</label><br>
+          <input type="email"/><br>
+          <label for="name">Message:</label><br>
+          <textarea type="textarea" ></textarea><br>
+          <input type="submit" value="submit" disabled />
+        </form>
+      </div>
+  </section>
+  <a href="#home" class="backtotop"> back to top</a>
+
+  <footer id="footer">
+    <p>copyright &copy; gas on wheel 2018</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="js/index.js"></script>
+</body>
+</html>
