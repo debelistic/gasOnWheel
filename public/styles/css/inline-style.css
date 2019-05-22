@@ -127,3 +127,10 @@ button, .button,
   position : relative;
   z-index : 100;
 }
+h2.title {
+  color: #fff;
+}
+
+.title {
+  color: #fff;
+}
