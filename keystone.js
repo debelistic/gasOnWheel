@@ -11,8 +11,8 @@ var handlebars = require('express-handlebars');
 // and documentation.
 
 keystone.init({
-	'name': 'gas on wheel',
-	'brand': 'gas on wheel',
+	'name': 'gas on wheels',
+	'brand': 'gas on wheels',
 
 	'less': 'public',
 	'static': 'public',
