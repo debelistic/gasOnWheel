@@ -13,8 +13,8 @@ Product.add({
   price: {type: Number},
   qty: {type: Number},
   description: {type: Types.Html, wysiwyg: true, height: 350},
-  image: {types: Types.CloudinaryImage},
+  image: { type: Types.CloudinaryImage },
   publishedDate: {type: Date, default: Date.now}
 });
 
-Product.register;
+Product.register();
