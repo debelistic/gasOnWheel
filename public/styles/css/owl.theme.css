@@ -16,10 +16,28 @@
 	margin-top: 10px;
 }
 
+.inline-display{
+	display: inline !important;
+}
+
 .logo_text{
 	color: #fff;
 	height: inherit;
 	vertical-align: middle;
+}
+
+.white_col{
+	color: #fff !important;
+}
+
+.logo_caption{
+	display: block;
+	text-transform: lowercase;
+	font-weight: 700;
+	letter-spacing: 0;
+	word-spacing: 16px;
+	font-size: 10px;
+	text-align: center;
 }
 
 .owl-theme .owl-controls{
