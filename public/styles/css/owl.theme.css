@@ -2,6 +2,25 @@
 * 	Owl Carousel Owl Demo Theme 
 *	v1.3.3
 */
+.main_logo{
+	letter-spacing: -6px;
+	padding: 5px;
+	margin: 5px;
+}
+.main_logo img{
+	margin: 0;
+	padding: 0;
+	object-fit: cover;
+	height: 44px;
+	vertical-align: unset;
+	margin-top: 10px;
+}
+
+.logo_text{
+	color: #fff;
+	height: inherit;
+	vertical-align: middle;
+}
 
 .owl-theme .owl-controls{
 	margin-top: 10px;
