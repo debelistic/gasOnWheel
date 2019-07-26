@@ -18,6 +18,9 @@ var _ = require('lodash');
 	or replace it with your own templates / logic.
 */
 exports.initLocals = function (req, res, next) {
+
+	var locals = res.locals;
+
 	res.locals.navLinks = [
 		{ label: 'Home', key: 'home', href: '/' },
 		{ label: 'Booking', key: 'store', href: '/products' },
@@ -26,7 +29,8 @@ exports.initLocals = function (req, res, next) {
 		{ label: 'Management', key: 'mangement', href: '/management' },
 		{ label: 'Contact', key: 'contact', href: '/contact' },
 	];
-	res.locals.user = req.user;
+	if (req.user) locals.navLinks.push({ label: 'MyOrders',		key: 'order',		href: '/myorders' });
+	locals.user = req.user;
 	next();
 };
 

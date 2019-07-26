@@ -41,19 +41,19 @@ button, .button,
 .woocommerce-page button.button, .widget_product_search #searchsubmit, .widget_product_search #searchsubmit:hover,
 .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button
 {
-  background:rgba(131,202,19,1);
+  background:#07b107;
 }
 
 .wd-section-blog-services.style-3 .wd-blog-post .shape {
-  stroke: rgba(131,202,19,1)
+  stroke: #07b107
 }
 
 .wd-menu3-logo {
-  border-top: 70px solid rgba(131,202,19,1)
+  border-top: 70px solid #07b107
 }
 
 .triongle {
-  background-color: rgba(131,202,19,1)
+  background-color: #07b107
 }
 
 
@@ -61,7 +61,7 @@ button, .button,
 #wp-calendar a,.wd-testimonail blockquote cite,
 .list-icon li:before
 {
-  color:rgba(131,202,19,1);
+  color:#07b107;
 }
 
 
@@ -77,7 +77,7 @@ button, .button,
 .creative-layout .top-bar-section ul li:hover:not(.has-form) > a,
 .top-bar-section ul li:hover:not(.has-form) > a,
 .top-bar-section .dropdown li:hover:not(.has-form):not(.active) > a:not(.button){
-  color:rgba(131,202,19,1);
+  color:#07b107;
 }
 .creative-layout .contain-to-grid.sticky.fixed{
   background-color: rgba(255,255,255,1);
@@ -88,7 +88,7 @@ button, .button,
 .creative-layout .fixed .top-bar-section ul li > a:hover,
 .creative-layout .fixed .top-bar-section ul li.active_menu:not(.has-form) > a,
 .top-bar-section .dropdown li:hover:not(.has-form):not(.active) > a:not(.button){
-  color:rgba(131,202,19,1);
+  color:#07b107;
 }
 
 .wd-footer, .wd-copyright {
@@ -104,13 +104,13 @@ button, .button,
 }
 
 .wd-footer, .wd-copyright {
-  background: rgb(44, 44, 44) url(../images/bg4-2.jpg);
+  background: #07b107 url(../images/bg4-2.jpg);
   background-size: cover;
   background-position: bottom;
 }
 .wd-section-contact .wd-form .form-content,
 .wd-section-contact .wd-form {
-  background: #6AA70A;
+  background: #07b107;
 }
 .page-id-1061 .wd-menu3-header, .page-id-1061 .wd-footer {
   display : none;
@@ -133,4 +133,13 @@ h2.title {
 
 .title {
   color: #fff;
+}
+
+.foot-right{
+  background: #222;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 0;
 }
