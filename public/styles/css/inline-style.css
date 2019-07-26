@@ -132,7 +132,7 @@ h2.title {
 }
 
 .title {
-  color: #fff;
+  color: #07b107 !important;
 }
 
 .foot-right{
@@ -142,4 +142,8 @@ h2.title {
   text-align: center;
   padding: 5px;
   margin-bottom: 0;
+}
+
+strong{
+  color: #07b107;
 }
