@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title> Gas On Wheels</title>
+
+
+		<link rel="stylesheet" href="/styles/css/app.css">
+		<link rel="stylesheet" href="/styles/css/animate.css">
+		<link rel="stylesheet" href="/styles/css/bootstrap-colorpicker.min.css">
+		<link rel="stylesheet" href="/styles/css/font-awesome/font-awesome.min.css">
+		<link rel="stylesheet" href="/styles/css/inline-style.css">
+		<link rel="stylesheet" href="/styles/css/owl.carousel.css">
+		<link rel="stylesheet" href="/styles/css/owl.theme.css">
+		<link rel="stylesheet" href="/styles/css/owl.transitions.css">
+		<link rel="stylesheet" href="/styles/css/swiper.min.css">
+		<!-- google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+
+		{{!-- This file provides the default styling for the KeystoneJS Content Editor
+			- only renders when user is logged in and admin--}}
+		{{{isAdminEditorCSS user}}}
+
+		{{!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+		//- Safely remove this block if you are not targeting IE8 --}}
+		<!--[if lt IE 9]>
+			<script src="//cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.js"></script>
+			<script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+	<body>
+		<header class=" wd-menu3-header ">
+      <div class="show-for-medium-up wd-menu3-logo">
+        <h1>
+          <a class="main_logo" title="Green energy" rel="home" href="../">
+            <span class="logo_text">G</span>
+            <span class="logo_text"><img alt="logo" src="images/fire_logo.png"></span>
+            <span class="logo_text">W</span>
+            <small class="logo_caption">Gas on Wheels</small>
+          </a>
+        </h1>
+      </div>
+      <div class=" wd-menu3-nav">
+        <nav class="top-bar" data-topbar="" >
+        <ul class="title-area">
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+
+        <section class="top-bar-section">
+          <div class="menu-main-menu-container">
+            <ul id="menu-main-menu" class="menu">
+              {{# each navLinks}}
+                <li {{#ifeq ../section key}}class="active_menu"{{else}}{{/ifeq}}>
+                  <a href="{{ href }}" class="has-icon">{{ label }}</a>
+                </li>
+              {{/each}}
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              {{#if user}}
+              <li><a href="/keystone/signout">Sign Out</a></li>
+              {{else}}
+              {{!-- <li><a href="/keystone/signin">Sign In</a></li> --}}
+              {{/if}}
+            </ul>
+          </div>
+        </section>
+        </nav>
+      </div>
+      <div class="show-for-large-up triongle"></div>
+      <div class="show-for-large-up wd-menu3-social">
+        <ul class="social-icons inline-list">
+          <li class="facebook">
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li class="twitter">
+            <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li class="googleplus">
+            <a href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a>
+          </li>
+        </ul>
+      </div>
+	  </header>
+		
+		<div id="body">
+			<!--
+				Flash messages allow you to display once-off status messages to users, e.g. form
+				validation errors, success messages, etc
+			-->
+			{{#if messages}}
+			<div id="flash-messages" class="container">
+				{{#if messages.info}}
+				<div class="alert alert-info">
+						{{{flashMessages messages.info}}}
+				</div>
+				{{/if}}
+				{{#if messages.success}}
+				<div class="alert alert-success">
+						{{{flashMessages messages.success}}}
+				</div>
+				{{/if}}
+				{{#if messages.warning}}
+				<div class="alert alert-warning">
+						{{{flashMessages messages.warning}}}
+				</div>
+				{{/if}}
+				{{#if messages.error}}
+				<div class="alert alert-danger">
+						{{{flashMessages messages.error}}}
+				</div>
+				{{/if}}
+			</div>
+			{{/if}}
+			<!-- The content block should contain the body of your template's content-->
+      {{{body}}}
+			
+		</div>
+		
+
+	<section class="wd-footer">
+    <div class="row animation-parent" data-animation-delay="180">
+      <ul class="block large-4 medium-4 columns clearfix animated" data-animated="fadeInRight"
+          style="opacity: 1; animation-delay: 0ms;">
+        <li>
+          <div class="textwidget">
+            <div class="widget-logo">
+              <div class="">
+                <h1>
+                  <a class="main_logo" title="Green energy" rel="home" href="../">
+                    <span class="logo_text">G</span>
+                    <span class="logo_text"><img class="inline-display" alt="logo" src="images/fire_logo.png"></span>
+                    <span class="logo_text">W</span>
+                  </a>
+                </h1>
+              </div>
+              <p>Gas on wheels is an innovative business idea that intends to outmodern the delivery of liquefied
+                petroleum gas to homes and businesses. Our &quot;top up or refill&quot; (flexible purchase volume) of existing
+                gas level model will make it more readily affordable and available.
+              </p> 
+              <p>It will ensure conversion from
+                harmful biomass to Liquefied Petroleum Gas in homes and businesses particularly in remote areas and
+                communities. Our goal involves creating awareness and showcasing liquefied petroleum gas as a cheaper, cleaner and healthier burning fuel.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="block large-4 medium-4 columns clearfix animated" data-animated="fadeInRight"
+          style="opacity: 1; animation-delay: 180ms;">
+        <li><h2 class="block-title">Get in Touch</h2>
+          <div class="textwidget">
+            <section class="widget-info">
+
+              <ul>
+                <li>
+                  <span><span>Phone:</span>+2348186001153</span>
+                </li>
+                <li>
+                  <span><span>Email:</span>info@gasonwheel.com</span>
+                </li>
+                <li>
+                  <span><span>Adress:</span> 22 Ademola Oshinowo street, off Love-all road, Ikosi Ketu. Lagos, Nigeria</span>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="block large-4 medium-4 columns clearfix animated " data-animated="fadeInRight"
+          style="opacity: 1; animation-delay: 360ms;">
+        <li><h2 class="block-title">Newsletter</h2>
+          <div class="textwidget">
+            <div class="wd-newsletter">
+              Sign up your newsletter
+
+              <div>
+                <input class="email-adress" placeholder="EMAIL ADRESS" size="20" value="" name="email-adress" type="text">
+                <input class="newslettersubmit" value="GO" type="submit">
+                <ul class="inline-list">
+                  <li class="flickr">
+                    <a href="#"><i class="fa fa-flickr"></i></a>
+                  </li>
+                  <li class="facebook">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li class="twitter">
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                  </li>
+                  <li class="vimeo">
+                    <a href="#"><i class="fa fa-vimeo-square"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <p class="foot-right">All Rights Reserved. &copy;Gas On Wheels 2019</p>
+
+		
+  <script src="/js/jquery.js"></script>
+  <script src="/js/plugins.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+  <script src="/js/shortcode/script-shortcodes.js"></script>
+  <script src="/js/hoverIntent.js"></script>
+  <script src="/js/bootstrap-colorpicker.min.js"></script>
+  <script src="/js/scripts.js"></script>
+  {{{isAdminEditorJS user}}}
+	</body>
+</html>

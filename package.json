@@ -1,33 +1,25 @@
 {
-  "name": "gasonwheel",
-  "version": "1.0.0",
-  "description": "Website of a business that aims to deliver liquefied petroleum gas to homes and businesses.",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "gas-on-wheel",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "keystone": "4.0.0-beta.5",
+    "lodash": "^4.13.1",
+    "moment": "2.17.1",
+    "cloudinary": "1.7.0",
+    "express-handlebars": "3.0.0",
+    "handlebars": "4.0.6",
+    "dotenv": "4.0.0",
+    "keystone-email": "1.0.5",
+    "async": "2.1.4"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/debelistic/gasOnWheel.git"
-  },
-  "keywords": [
-    "gas",
-    "on",
-    "wheel"
-  ],
-  "author": "victor awotidebe",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/debelistic/gasOnWheel/issues"
-  },
-  "homepage": "https://github.com/debelistic/gasOnWheel#readme",
   "devDependencies": {
-    "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.4",
-    "@babel/polyfill": "^7.4.4",
-    "@babel/preset-env": "^7.4.4",
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.17.2"
+    "eslint": "3.15.0",
+    "eslint-config-keystone": "3.0.0",
+    "eslint-plugin-react": "^5.1.1"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node keystone.js"
   }
 }
